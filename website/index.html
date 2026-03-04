@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swetha Manupati - Data Professional</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <!-- Dynamic Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <span class="logo-circle"></span>
+            SM.
+        </div>
+        <ul class="nav-links">
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#more">Resume & Blogs</a></li>
+        </ul>
+        <button class="nav-contact-btn">Let's Talk <i class="fa-solid fa-arrow-right"></i></button>
+    </nav>
+
+    <!-- Professional Hero Section -->
+    <section id="about" class="hero">
+        <div class="hero-content">
+            <div class="badge">Hi there! 👋</div>
+            <h1 class="hero-title">I'm <span class="highlight">Swetha Manupati</span></h1>
+            <h2 class="hero-subtitle">Transforming raw data into <span class="gradient-text">measurable impact</span>.
+            </h2>
+            <p class="hero-description">
+                I am a Data Analyst specializing in operational analytics and creative visualization.
+                I focus on uncovering actionable insights, building dynamic BI dashboards, and executing rigorous
+                statistical analyses that drive strategic business decisions. When I'm not writing SQL or crafting data
+                stories,
+                you'll find me exploring the intersection of technology and operations.
+            </p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">View My Deep Dives</a>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                    <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="hero-image-container">
+            <div class="image-bg-shape"></div>
+            <img src="profile pic.jpeg" alt="Swetha Manupati" class="hero-image">
+            <div class="floating-card metric-card-1">
+                <i class="fa-solid fa-chart-line"></i> <strong>2+ Years</strong> Experience
+            </div>
+            <div class="floating-card metric-card-2">
+                <i class="fa-solid fa-database"></i> <strong>Data Storyteller</strong>
+            </div>
+        </div>
+    </section>
+
+    <!-- Top 2 Deep Dive Projects -->
+    <section id="projects" class="section projects-section">
+        <div class="section-header">
+            <h2>Featured <span>Deep Dives</span></h2>
+            <p>Showcasing rigorous analytical frameworks and business value across high-impact domains.</p>
+        </div>
+
+        <div class="projects-grid">
+            <!-- Finance -->
+            <div class="project-card">
+                <div class="project-icon bg-accent"><i class="fa-solid fa-chart-pie"></i></div>
+                <div class="project-content">
+                    <span class="project-category">Finance / FP&A</span>
+                    <h3>Corporate SaaS Financial Forecasting</h3>
+                    <p class="project-desc">Built financial models and utilized SQL for budget variance analysis,
+                        supporting monthly outlooks for a B2B SaaS platform.</p>
+                    <ul class="project-highlights">
+                        <li><strong>Insight:</strong> Identified a $150k infrastructure budget risk early in Q2 due to
+                            scaling cloud costs.</li>
+                        <li><strong>Impact:</strong> Allowed executive leadership to freeze non-critical headcount,
+                            preserving the quarterly bottom line.</li>
+                    </ul>
+                    <a href="https://github.com/swethamanupati/saas-forecasting" target="_blank"
+                        class="view-project">Read Full Analysis on GitHub <i class="fa-solid fa-chevron-right"></i></a>
+                    <div class="loom-placeholder">
+                        <i class="fa-solid fa-play-circle"></i> View Video Walkthrough
+                    </div>
+                </div>
+            </div>
+
+            <!-- E-Commerce Churn -->
+            <div class="project-card">
+                <div class="project-icon bg-accent"><i class="fa-solid fa-users-slash"></i></div>
+                <div class="project-content">
+                    <span class="project-category">E-Commerce / Retention</span>
+                    <h3>Customer Churn Prediction & Mitigation</h3>
+                    <p class="project-desc">Designed a behavioral cohort analysis for an e-commerce platform to identify
+                        key churn indicators among first-time buyers.</p>
+                    <ul class="project-highlights">
+                        <li><strong>Insight:</strong> Customers skipping the "Welcome Tour" churned at a 40% higher rate
+                            in Month 1.</li>
+                        <li><strong>Impact:</strong> Recommended UI changes that mapped to an estimated 15% improvement
+                            in Day-30 retention.</li>
+                    </ul>
+                    <a href="https://github.com/swethamanupati/ecommerce-churn" target="_blank"
+                        class="view-project">Read Full Analysis on GitHub <i class="fa-solid fa-chevron-right"></i></a>
+                    <div class="loom-placeholder">
+                        <i class="fa-solid fa-play-circle"></i> View Video Walkthrough
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Experience Section -->
+    <section id="experience" class="section experience-section">
+        <div class="section-header center">
+            <h2>Professional <span>Experience</span></h2>
+            <p>Driving results in academic and research environments.</p>
+        </div>
+
+        <div class="timeline">
+            <!-- Experience 1 -->
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-header">
+                        <h3>Research Assistant (Wearable Sensor Data)</h3>
+                        <span class="company"><i class="fa-solid fa-building-columns"></i> DePaul University</span>
+                        <span class="date">Present</span>
+                    </div>
+                    <p>Spearheaded the extraction, cleaning, and statistical analysis of large-scale wearable sensor
+                        datasets using Python and R. Transformed raw physiological metrics into comprehensive Tableau
+                        dashboards, enabling lead researchers to draw vital conclusions regarding user behavior and
+                        engagement metrics.</p>
+                </div>
+            </div>
+
+            <!-- Experience 2 -->
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-header">
+                        <h3>Graduate Student Ambassador</h3>
+                        <span class="company"><i class="fa-solid fa-building-columns"></i> DePaul University</span>
+                        <span class="date">Ongoing</span>
+                    </div>
+                    <p>Representing the Data Science and graduate degree programs to prospective students. Utilizing
+                        excellent communication and presentation skills to effectively translate complex departmental
+                        information to non-technical audiences, hosting seminars, and significantly improving
+                        prospective student engagement yields.</p>
+                </div>
+            </div>
+
+            <!-- Experience 3 -->
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-header">
+                        <h3>Academic Tutor</h3>
+                        <span class="company"><i class="fa-solid fa-chalkboard-user"></i> DePaul University</span>
+                        <span class="date">Previous</span>
+                    </div>
+                    <p>Provided foundational instruction in programming (Python, SQL) and quantitative analysis to
+                        undergraduate students. Developed individualized learning plans, debugging workflows, and
+                        conceptual frameworks that directly improved student cohort GPA and technical literacy.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Split Section: Skills & Certifications/Blogs -->
+    <section id="more" class="section split-section">
+        <div class="split-left">
+            <div class="section-header">
+                <h2>Technical <span>Skills</span></h2>
+            </div>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h4>Core Languages & Database</h4>
+                    <div class="skill-tags">
+                        <span>SQL (Advanced)</span>
+                        <span>Python (Pandas, NumPy)</span>
+                        <span>R</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h4>BI & Visualization</h4>
+                    <div class="skill-tags">
+                        <span>Tableau</span>
+                        <span>Power BI</span>
+                        <span>Advanced Excel</span>
+                        <span>Data Storytelling</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h4>Analytics & Methodologies</h4>
+                    <div class="skill-tags">
+                        <span>ETL Pipelines</span>
+                        <span>Cohort Analysis</span>
+                        <span>A/B Testing Strategies</span>
+                        <span>FP&A Forecasting</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="split-right">
+            <div class="section-header">
+                <h2>Credentials & <span>Extras</span></h2>
+            </div>
+
+            <div class="extra-card bg-light-accent">
+                <div class="extra-icon"><i class="fa-solid fa-certificate"></i></div>
+                <div class="extra-text">
+                    <h3>Data Analytics Certification</h3>
+                    <p>CareerFoundry &bull; Comprehensive curriculum covering data pipelines, descriptive stats, and BI
+                        storytelling.</p>
+                </div>
+            </div>
+
+            <div class="extra-card bg-light-accent">
+                <div class="extra-icon"><i class="fa-solid fa-file-pdf"></i></div>
+                <div class="extra-text">
+                    <h3>Curriculum Vitae</h3>
+                    <p>A full detail of my academic background and data journey.</p>
+                    <a href="#" class="btn btn-sm btn-outline">Download Resume</a>
+                </div>
+            </div>
+
+            <div class="extra-card bg-light-accent">
+                <div class="extra-icon"><i class="fa-solid fa-pen-nib"></i></div>
+                <div class="extra-text">
+                    <h3>Data Blogs</h3>
+                    <p>Thoughts on the future of data visualization and operational analytics.</p>
+                    <a href="#" class="btn btn-sm btn-outline">Read Articles</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Swetha Manupati. Designed for Impact.</p>
+    </footer>
+
+</body>
+
+</html>
