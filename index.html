@@ -286,33 +286,63 @@
     <!-- Contact Section -->
     <section id="contact" class="section contact-section">
         <div class="section-header">
-            <h2>Contact <span>Me</span></h2>
-            <p>I'd love to connect! Feel free to reach out during my available hours.</p>
+            <h2>Get In <span>Touch</span></h2>
+            <p>I'm always open to discussing new opportunities and collaborations.</p>
         </div>
-        <div class="contact-cards">
-            <div class="contact-card">
-                <div class="contact-card-icon"><i class="fa-solid fa-clock"></i></div>
-                <h4>Available Hours</h4>
-                <p>Monday – Friday</p>
-                <p>10:00 AM – 5:00 PM</p>
+        <div class="contact-layout">
+            <!-- Left: Contact Details -->
+            <div class="contact-details-card">
+                <h3>Contact Details</h3>
+                <p class="contact-tagline">Feel free to reach out via email, phone, or connect with me on LinkedIn.
+                    Available Mon–Fri, 10 AM – 5 PM.</p>
+                <div class="contact-detail-item">
+                    <i class="fa-solid fa-envelope"></i>
+                    <a href="mailto:swethamanupati2@gmail.com">swethamanupati2@gmail.com</a>
+                </div>
+                <div class="contact-detail-item">
+                    <i class="fa-solid fa-phone"></i>
+                    <a href="tel:3127213324">+1 (312) 721-3324</a>
+                </div>
+                <div class="contact-detail-item">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                    <a href="https://www.linkedin.com/in/swetha-manupati/"
+                        target="_blank">linkedin.com/in/swetha-manupati</a>
+                </div>
             </div>
-            <div class="contact-card">
-                <div class="contact-card-icon"><i class="fa-solid fa-phone"></i></div>
-                <h4>Phone</h4>
-                <a href="tel:3127213324">(312) 721-3324</a>
-            </div>
-            <div class="contact-card">
-                <div class="contact-card-icon"><i class="fa-solid fa-envelope"></i></div>
-                <h4>Email</h4>
-                <a href="mailto:swethamanupati2@gmail.com">swethamanupati2@gmail.com</a>
-            </div>
-            <div class="contact-card">
-                <div class="contact-card-icon"><i class="fa-brands fa-linkedin-in"></i></div>
-                <h4>LinkedIn</h4>
-                <a href="https://www.linkedin.com/in/swetha-manupati/" target="_blank">swetha-manupati</a>
+            <!-- Right: Contact Form -->
+            <div class="contact-form-card">
+                <form id="contact-form" onsubmit="sendMail(event)">
+                    <div class="form-group">
+                        <label for="contact-name">Name</label>
+                        <input type="text" id="contact-name" placeholder="Your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-email">Email</label>
+                        <input type="email" id="contact-email" placeholder="your@email.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-message">Message</label>
+                        <textarea id="contact-message" rows="5" placeholder="Write your message here..."
+                            required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary contact-submit">Send Message <i
+                            class="fa-solid fa-paper-plane"></i></button>
+                </form>
             </div>
         </div>
     </section>
+
+    <script>
+        function sendMail(e) {
+            e.preventDefault();
+            const name = document.getElementById('contact-name').value;
+            const email = document.getElementById('contact-email').value;
+            const message = document.getElementById('contact-message').value;
+            const subject = encodeURIComponent('Message from ' + name + ' via Portfolio');
+            const body = encodeURIComponent('Name: ' + name + '\nEmail: ' + email + '\n\nMessage:\n' + message);
+            window.location.href = 'mailto:swethamanupati2@gmail.com?subject=' + subject + '&body=' + body;
+        }
+    </script>
 
     <footer>
         <p>&copy; 2026 Swetha Manupati. Designed for Impact.</p>
