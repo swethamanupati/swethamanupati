@@ -119,8 +119,8 @@ h4 {
     display: grid;
     grid-template-columns: 1.1fr 0.9fr;
     gap: 60px;
-    align-items: center;
-    padding: 80px 5% 100px;
+    align-items: flex-start;
+    padding: 100px 5% 100px;
     max-width: 1400px;
     margin: 0 auto;
 }
@@ -137,9 +137,10 @@ h4 {
 }
 
 .hero-title {
-    font-size: 2.8rem;
+    font-size: 3.2rem;
     line-height: 1.2;
     margin-bottom: 24px;
+    margin-top: 10px;
 }
 
 .hero-subtitle {
@@ -151,16 +152,8 @@ h4 {
 .hero-description {
     color: var(--text-light);
     font-size: 1.1rem;
-    margin-bottom: 24px;
-    max-width: 600px;
-}
-
-.quick-skills {
-    color: var(--text-dark);
-    font-size: 0.95rem;
-    font-weight: 500;
     margin-bottom: 40px;
-    letter-spacing: 0.5px;
+    max-width: 600px;
 }
 
 .hero-buttons {
