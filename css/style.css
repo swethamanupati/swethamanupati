@@ -1,6 +1,7 @@
 :root {
-    --bg-main: #fdf2f8;
-    /* Soft baby pink */
+    --bg-main: #fafbfa;
+    /* Professional decent cool gray */
+    /* Professional cool pale slate */
     --text-dark: #0f172a;
     /* Slate 900 */
     --text-light: #475569;
@@ -209,7 +210,7 @@ h4 {
 .hero-image-container {
     position: relative;
     width: 100%;
-    max-width: 480px;
+    max-width: 320px;
     margin: 0 auto;
 }
 
